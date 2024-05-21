@@ -12,6 +12,10 @@ class TestAdminPage:
         BaseClass(self.driver, 3).wait_and_click((By.ID, 'doctor-view-btn'))
         print("2 .Entered Doctors Index Path")
 
+    def click_medicine_view(self):
+        BaseClass(self.driver, 3).wait_and_click((By.XPATH, '//a[text()="Manage Medicines"]'))
+        print("2 .Entered Medicine Index Path")
+
     def add_doctor(self, name, email, phone, yoe, fee, sid):
         self.driver.get("http://localhost:3000/doctors")
         BaseClass(self.driver, 3).wait_and_click((By.ID, 'myInput'))
@@ -38,7 +42,8 @@ class TestAdminPage:
         BaseClass(self.driver, 3).wait_and_send_keys((By.ID, 'dosage'), dosage)
         BaseClass(self.driver, 3).wait_and_send_keys((By.ID, 'quantity'), quantity)
         BaseClass(self.driver, 3).wait_and_click((By.ID, 'need_prescription'))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, f'//select[@id="need_prescription"]//option[@value="{pid}"]'))
+        BaseClass(self.driver, 3).wait_and_click(
+            (By.XPATH, f'//select[@id="need_prescription"]//option[@value="{pid}"]'))
         BaseClass(self.driver, 3).wait_and_click((By.ID, 'med-submit-btn'))
-        print(f"MEDICINE ADDED SUCCESFULLY-{name}")
         time.sleep(1)
+        print(f"MEDICINE ADDED SUCCESFULLY-{name}")

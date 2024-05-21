@@ -8,7 +8,7 @@ from conftest import chrome_browser
 
 url = "http://localhost:3000/"
 # medicine_image = "/Users/mparameswarappa/Downloads/dolo.jpg"
-medicine_image = "/home/manikanta/Downloads/Doctors_Images"
+medicine_image = "/home/manikanta/Downloads/Doctors_Images/medicine.jpg"
 delay = 3
 
 def test_scenario_1(chrome_browser):
@@ -29,18 +29,19 @@ def test_scenario_1(chrome_browser):
     assert total_doctors == 2
     assert last_doctor_email == "doctor2@gmail.com"
 
-    time.sleep(1)
     medicines_table = MedicinesDB()
-    time.sleep(1)
+    time.sleep(2)
+
     before_total_medicines = medicines_table.get_medicines_count()
-    time.sleep(1)
-    medicine1 = test_add.add_medicine(medicine_image, "DOLO", "FOR FEVER AND HEADACE", "10", "2", "10", "true")
-    time.sleep(1)
-    medicine2 = test_add.add_medicine(medicine_image, "PARACETAMOL", "FOR FEVER AND HEADACE", "10", "2", "10", "false")
-    time.sleep(1)
+    medicine1 = test_add.add_medicine(medicine_image, "DOLO", "FOR FEVER AND HEADACE", "10", "2", "10", "false")
+    driver.implicitly_wait(1)
+    medicine2 = test_add.add_medicine(medicine_image, "PARACETAMOL", "FOR FEVER AND HEADACE", "10", "2", "10", "true")
+    driver.implicitly_wait(1)
     after_total_medicines = medicines_table.get_medicines_count()
-    time.sleep(1)
+
+    driver.implicitly_wait(1)
     last_medicine_name = medicines_table.get_last_medicine_name()
-    time.sleep(1)
+    driver.implicitly_wait(2)
+
     assert before_total_medicines == after_total_medicines - 2
     assert last_medicine_name == "PARACETAMOL"
