@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efce4d8b-7f22-4a6f-b95f-ac72f8e3f086" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/appointments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_second.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_third.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/admin_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/doctor_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/doctor_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/medicine_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/medicine_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/patient_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/patient_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_first.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_first.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_second.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_second.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_third.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_third.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +47,16 @@
   "keyToString": {
     "Python tests.Python tests for test_first.Test_login.executor": "Run",
     "Python tests.Python tests for test_first.Test_login.test_login.executor": "Run",
+    "Python tests.Python tests for test_first.test_scenario_1.executor": "Run",
+    "Python tests.Python tests for test_second.test_scenario_2.executor": "Debug",
     "Python tests.Python tests for test_third.test_scenario_3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/manikanta/Desktop/Refactor/Medicare-Selenium"
+    "last_opened_file_path": "/Users/mparameswarappa/PycharmProjects/Medicare_Selenuim_pytest"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_third.test_scenario_3">
+  <component name="RunManager" selected="Python tests.Python tests for test_second.test_scenario_2">
     <configuration name="Python tests for test_first.Test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Medicare_Selenium" />
       <option name="ENV_FILES" value="" />
@@ -84,6 +87,36 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_first.test_scenario_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Medicare_Selenium" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_first.test_scenario_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_second.test_scenario_2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Medicare_Selenium" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_second.test_scenario_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_third.test_scenario_3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Medicare_Selenium" />
       <option name="ENV_FILES" value="" />
@@ -101,6 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_second.test_scenario_2" />
+        <item itemvalue="Python tests.Python tests for test_first.test_scenario_1" />
         <item itemvalue="Python tests.Python tests for test_third.test_scenario_3" />
         <item itemvalue="Python tests.Python tests for test_first.Test_login.test_login" />
         <item itemvalue="Python tests.Python tests for test_first.Test_login" />
@@ -110,7 +145,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
       </set>
     </attachedChunks>
   </component>

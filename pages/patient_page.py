@@ -5,10 +5,8 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from pages.base_page import BaseClass
-from selenium.webdriver.support.select import Select
 
 url = "http://localhost:3000/doctors"
-
 
 class TestSlotBookPage:
     def __init__(self, driver):
@@ -20,15 +18,21 @@ class TestSlotBookPage:
 
     def select_specalization(self, sid):
         print(sid)
-        BaseClass(self.driver, 3).wait_and_click((By.ID, 'specializationDropdown'))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, f"//label[@class='dropdown-item' and normalize-space()='{sid}']"))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//input[@type='submit' and @value='Search']"))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "(//button[@type='submit' and text()='Book Appointment'])[1]"))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//button[@id='tomo-btn']"))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "(//div[@id='current_slots']//button)[1]"))
+        base_class = BaseClass(self.driver, 3)
+        base_class.wait_and_click((By.ID, 'specializationDropdown'))
+        base_class.wait_and_click((By.XPATH, f"//label[@class='dropdown-item' and normalize-space()='{sid}']"))
+        base_class.wait_and_click((By.XPATH, "//input[@type='submit' and @value='Search']"))
+        base_class.wait_and_click((By.XPATH, "(//button[@type='submit' and text()='Book Appointment'])[1]"))
+        base_class.wait_and_click((By.XPATH, "//button[@id='tomo-btn']"))
+        base_class.wait_and_click((By.XPATH, "(//div[@id='current_slots']//button)[1]"))
 
-        BaseClass(self.driver, 3).wait_and_send_keys((By.XPATH, "//textarea[@id ='appointmentReason']"), "I HAVE FEVER")
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//input[@type='submit' and @value='Confirm']"))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//button[@type='submit' and text()='Log out']"))
+        # button = self.driver.find_element(By.XPATH, "//textarea[@id ='appointmentReason']")
+        # self.driver.implicitly_wait(10)
+        # ActionChains(self.driver).move_to_element(button).send_keys("I HAVE FEVER").perform()
+        # time.sleep(1)
+
+        base_class.wait_and_send_keys((By.XPATH, "//textarea[contains(@placeholder,'appointment')]"), "I HAVE FEVER")
+        base_class.wait_and_click((By.XPATH, "//input[@type='submit' and @value='Confirm']"))
+        base_class.wait_and_click((By.XPATH, "//button[@type='submit' and text()='Log out']"))
 
 

@@ -17,10 +17,11 @@ class TestDoctorPage:
         time.sleep(1)
 
     def prescribe(self):
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//button[@type='button' and normalize-space()='Prescribe']"))
-        BaseClass(self.driver, 3).wait_and_send_keys((By.XPATH, "//trix-editor"), "DOLO 650 , Paracetamol")
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//input[@type='submit' and @value='Submit']"))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//button[@type='submit'and text()='Complete Appointment']"))
-        BaseClass(self.driver, 3).wait_and_click((By.XPATH, "//button[@type='submit' and text()='Log out']"))
+        base_class = BaseClass(self.driver, 3)
+        base_class.wait_and_click((By.XPATH, "//button[@type='button' and normalize-space()='Prescribe']"))
+        base_class.wait_and_send_keys((By.XPATH, "//trix-editor"), "DOLO 650 , Paracetamol")
+        base_class.wait_and_click((By.XPATH, "//input[@type='submit' and @value='Submit']"))
+        base_class.wait_and_click((By.XPATH, "//button[@type='submit'and text()='Complete Appointment']"))
+        base_class.wait_and_click((By.XPATH, "//button[@type='submit' and text()='Log out']"))
 
 

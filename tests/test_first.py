@@ -7,8 +7,8 @@ from database.medicines import MedicinesDB
 from conftest import chrome_browser
 
 url = "http://localhost:3000/"
-# medicine_image = "/Users/mparameswarappa/Downloads/dolo.jpg"
-medicine_image = "/home/manikanta/Downloads/Doctors_Images/medicine.jpg"
+medicine_image = "/Users/mparameswarappa/Downloads/dolo.jpg"
+# medicine_image = "/home/manikanta/Downloads/Doctors_Images/medicine.jpg"
 delay = 3
 
 def test_scenario_1(chrome_browser):
@@ -18,9 +18,9 @@ def test_scenario_1(chrome_browser):
     test_add = TestAdminPage(driver)
     test_add.click_doctor_view()
     time.sleep(1)
-    doctor1 = test_add.add_doctor("doctor1", "doctor1@gmail.com", "8987678987", "2", "1000", 1)
+    doctor1 = test_add.add_doctor("doctor1", "doctor1@gmail.com", "8987678987", "2", "1000", 9)
     time.sleep(1)
-    doctor2 = test_add.add_doctor("doctor2", "doctor2@gmail.com", "9878987678", "3", "1500", 2)
+    doctor2 = test_add.add_doctor("doctor2", "doctor2@gmail.com", "9878987678", "3", "1500", 10)
     time.sleep(1)
     doctors_table = DoctorsDB()
     total_doctors = doctors_table.get_doctors_count()

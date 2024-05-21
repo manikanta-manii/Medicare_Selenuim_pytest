@@ -7,10 +7,8 @@ from database.medicines import MedicinesDB
 from database.orders import OrdersDB
 
 url = "http://localhost:3000/"
-# medicine_image = "/Users/mparameswarappa/Downloads/dolo.jpg"
-medicine_image = "/home/manikanta/Downloads/Doctors_Images/medicine.jpg"
-delay = 3
-
+medicine_image = "/Users/mparameswarappa/Downloads/dolo.jpg"
+# medicine_image = "/home/manikanta/Downloads/Doctors_Images/medicine.jpg"
 
 def test_scenario_3(chrome_browser):
     driver = chrome_browser
