@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efce4d8b-7f22-4a6f-b95f-ac72f8e3f086" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/doctor_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/doctor_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/medicine_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/medicine_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/patient_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/patient_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_first.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_first.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_second.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_second.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_third.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_third.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_first.Test_login.executor": "Run",
-    "Python tests.Python tests for test_first.Test_login.test_login.executor": "Run",
-    "Python tests.Python tests for test_first.test_scenario_1.executor": "Run",
-    "Python tests.Python tests for test_second.test_scenario_2.executor": "Debug",
-    "Python tests.Python tests for test_third.test_scenario_3.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/mparameswarappa/PycharmProjects/Medicare_Selenuim_pytest"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_first.Test_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_first.Test_login.test_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_first.test_scenario_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_second.test_scenario_2.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_third.test_scenario_3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mparameswarappa/PycharmProjects/Medicare_Selenuim_pytest&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for test_second.test_scenario_2">
     <configuration name="Python tests for test_first.Test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Medicare_Selenium" />
